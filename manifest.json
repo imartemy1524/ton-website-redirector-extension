@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "TON Domain Redirector",
+  "version": "1.0",
+  "description": "Redirects all .ton domains to .ton.ski",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://*.ton/*", "*://*.ton.ski/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_title": "TON Domain Redirector"
+  },
+  "icons": {
+    "16": "16x.jpeg",
+    "48": "48x.jpeg",
+    "128": "128x.jpeg"
+  }
+}
+
